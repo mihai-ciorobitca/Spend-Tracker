@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%-r55!pxnto&3e=ext*nsk+ov0n0tc88e8m72pptpm+5@%w2zl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tracking-spends.vercel.app']
+ALLOWED_HOSTS = ['tracking-spends.vercel.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'api.wsgi.application'
+WSGI_APPLICATION = 'api.wsgi.app'
 
 
 # Database
