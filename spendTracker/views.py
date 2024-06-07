@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
-import os
+from os import getenv
 from supabase import create_client, Client
 from dotenv import load_dotenv
 from datetime import datetime
@@ -8,8 +7,8 @@ import pytz
 
 load_dotenv()
 
-url: str = os.environ.get("SUPABASE_URL")
-key: str = os.environ.get("SUPABASE_KEY")
+url: str = getenv("SUPABASE_URL")
+key: str = getenv("SUPABASE_KEY")
 supabase: Client = create_client(url, key)
 
 # Create your views here
