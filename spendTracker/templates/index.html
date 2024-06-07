@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head style="height: 100%">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
 </head>
 
-<body style="	height: 100%;">
-  <div class="py-5 text-center bg-dark text-white h-100 d-flex align-items-center">
-    <div class="container">
+<body style="	height: 100%;" class="h-100">
+  <div class="py-5 text-center bg-dark text-white d-flex align-items-center vh-100" style="	height: 100%;">
+    <div class="container" style="">
       <div class="row">
-        <div class="p-5 col-lg-6 col-10 mx-auto border">
+        <div class="col-lg-6 col-10 mx-auto border p-3">
           <h1 class="mb-4">Add item</h1>
-          <form action="/" method="post">
-            {% csrf_token %}
-            <div class="form-group"> <input type="text" class="form-control" id="form13" placeholder="Name" required="required" name="name"> </div>
+          <form action="/" method="post"> {% csrf_token %} <div class="form-group"> <input type="text" class="form-control" id="form13" placeholder="Name" required="required" name="name"> </div>
             <div class="form-group"> <input type="number" class="form-control" id="form14" placeholder="Price" required="required" name="price"> </div>
             <div class="form-group"> <input type="text" class="form-control" placeholder="Observation" id="form15" name="observation"> <small class="form-text text-muted text-right"></small> </div> <button type="submit" class="btn btn-primary w-100">Add<br></button>
           </form>
